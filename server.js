@@ -1,12 +1,12 @@
 "use strict";
 
 var express = require("express");
-var requestProxy = require('express-request-proxy');
+var requestProxy = require("express-request-proxy");
 /////////////////////
 
 var server = express();
 
-server.get('/issue/:id', requestProxy({
+server.get("/issue/:id", requestProxy({
 	url: "http://192.168.1.39/redmine/issues/:id.json",
 	query: {
 	  secret_key: process.env.SOMEAPI_SECRET_KEY,
@@ -14,7 +14,7 @@ server.get('/issue/:id', requestProxy({
 	},
 	headers: {
 		"X-Custom-Header": process.env.SOMEAPI_CUSTOM_HEADER,
-        "Authorization":"Basic YWRtaW46YWRtaW4="
+        "Authorization":"Basic YWRtaW46YWRtaW4=",
 	}
 }));
 

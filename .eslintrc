@@ -1,0 +1,10 @@
+{
+	"rules": {
+		"strict": 1,
+		"quotes": ["error", "double"]
+	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module"
+	}
+}
