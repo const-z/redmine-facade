@@ -9,11 +9,10 @@
   "author": "const-z",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.6",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
-    "express-request-proxy": "^2.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^2.10.2"
+    "express-request-proxy": "^2.0.0",
+    "jquery": "^2.2.3"
   }
 }

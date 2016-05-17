@@ -1,7 +1,8 @@
 {
 	"rules": {
 		"strict": 1,
-		"quotes": ["error", "double"]
+		"quotes": ["error", "double"],
+		"comma-dangle": ["error", "never"]
 	},
 	"parserOptions": {
 		"ecmaVersion": 6,
