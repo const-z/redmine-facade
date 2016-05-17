@@ -9,10 +9,13 @@
   "author": "const-z",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
     "bootstrap": "^3.3.6",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "express-request-proxy": "^2.0.0",
-    "jquery": "^2.2.3"
+    "jquery": "^2.2.3",
+    "vis": "^4.16.1"
   }
 }

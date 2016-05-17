@@ -16,7 +16,7 @@ server.use((req, res, next) => {
 });
 
 server.get("/issue/:id", requestProxy({
-	url: "http://192.168.0.196/redmine/issues/:id.json",
+	url: process.env.redmineRootUrl + "/issues/:id.json",
 	query: {
 		secret_key: process.env.SOMEAPI_SECRET_KEY,
 		"include": "changesets,journals"
@@ -27,7 +27,7 @@ server.get("/issue/:id", requestProxy({
 	}
 }));
 
-//starts YWRtaW46YWRtaW4=
+//starts
 server.listen(3300, () => {
     console.log("server listening at", 3300);
 });
